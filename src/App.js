@@ -3,6 +3,10 @@ import React from 'react';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
+import Image from './image';
+import Welcome from './welcom';
+import Myform from './Myform';
+import Employee from './Employee';
 
 function App() {  
   return (
@@ -13,10 +17,19 @@ function App() {
   <div className="App"> 
      {/* This is header injection */}
       <Header/>
-          <h1>This is a React app.</h1> 
-          <p>This is a APp Component</p>
+
+      <Welcome name="Tanmay" phone="007"> </Welcome>
+      
+      <h1>This is a React app.</h1>  
+        
+      <Image/>  
+        
+      <p>This is a APp Component</p>
+
     {/* This is footer injection */}
       <Footer/>
+      <Myform/>
+      <Employee/>
              </div> 
               );
             }

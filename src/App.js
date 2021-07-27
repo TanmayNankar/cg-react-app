@@ -16,10 +16,13 @@ function App() {
   
   <div className="App"> 
      {/* This is header injection */}
-      <Header/>
+      <Header />
 
       <Welcome name="Tanmay" phone="007"> </Welcome>
       
+      
+
+
       <h1>This is a React app.</h1>  
         
       <Image/>  

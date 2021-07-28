@@ -3,10 +3,10 @@ import React from 'react';
 class Employee extends React.Component {
     constructor() {
         super();
-        this.state = { name: '', salary: 10.5 };
+        this.state = { name: 'Tanmay', salary: 10.5 };
     }
     increaseSalary = () => {
-        this.setState({ salary: this.state.salary + 10 });
+      =    this.setState({ salary: this.state.salary + 10 });
     };
     setMyName = (evt) => {
         this.setState({ name: evt.target.value });
@@ -16,6 +16,7 @@ class Employee extends React.Component {
             <h1 > Hi! I am {this.state.name} and my salary is {this.state.salary}.</h1>
             <button type="button"
                 onClick={this.increaseSalary} >Increase</button>
+            
             <form>
                 <h1 style={{ color: "orange" }} >Data Form</h1>
                 <p>Name:</p>

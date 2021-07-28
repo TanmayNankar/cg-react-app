@@ -11,7 +11,7 @@ let Welcome = (props) => {
         <div>
             <h1>Welcome, {props.name} </h1>
             <p> {props.phone} </p>
-            <p> this.fun()</p>
+            <p> {fun()} </p>
         </div>
     );
 }

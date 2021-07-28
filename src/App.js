@@ -1,12 +1,13 @@
 
 import React from 'react';
 import './App.css';
-import Header from './Header';
-import Footer from './Footer';
-import Image from './image';
+import Header from './Component/Header';
+import Footer from './Component/Footer';
+import Image from './Component/image';
 import Welcome from './welcom';
-import Myform from './Myform';
-import Employee from './Employee';
+import Myform from './Component/Myform';
+import Employee from './Component/Employee';
+
 
 function App() {  
   return (
@@ -19,20 +20,16 @@ function App() {
       <Header />
 
       <Welcome name="Tanmay" phone="007"> </Welcome>
-      
-      
-
 
       <h1>This is a React app.</h1>  
-        
-      <Image/>  
-        
+     <Image/>  
+     <h1  className="display-1 text-primary">App Component</h1>  
       <p>This is a APp Component</p>
-
-    {/* This is footer injection */}
-      <Footer/>
+     
       <Myform/>
       <Employee/>
+
+      <Footer/>
              </div> 
               );
             }

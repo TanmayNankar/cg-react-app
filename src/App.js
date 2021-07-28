@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1 className="display-1 text-primary">App Component</h1>
       <Routes />
       <Footer />
     </div>

@@ -1,5 +1,7 @@
 import React from 'react';
+
 class MyFileInput extends React.Component {
+
   constructor(props) {
     super()
     this.curriculum = React.createRef()

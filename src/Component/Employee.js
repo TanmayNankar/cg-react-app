@@ -18,11 +18,15 @@ class Employee extends React.Component {
             <h1 className="display-1 text-primary">Employee Component</h1>
 
             <h1 > Hi! I am {this.state.name} and my salary is {this.state.salary}.</h1>
+
+            
             <button type="button"
                 onClick={this.increaseSalary} >Increase</button>
+
             <form>
                 <h1 >Data Form</h1>
                 <p>Name:</p>
+                
                 <input type="text"
                     onChange={evt => this.setMyName(evt)}></input>
             </form>

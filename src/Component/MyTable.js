@@ -21,6 +21,8 @@ const columns = [
     { Header: 'Name', accessor: 'name' },
     { Header: 'Salary', accessor: 'salary' }
 ];
+
+//var let const.
 const Table = ({ columns, data }) => {
     const {
         getTableProps,

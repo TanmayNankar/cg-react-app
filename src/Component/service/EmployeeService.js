@@ -15,6 +15,7 @@ class EmployeeService extends React.Component {
     async getHello() {
         return await this.http.get("/hello");
     }
+    
     // getAllEmployee() {
     //     return http.get("/Employee");
     // }

@@ -7,20 +7,26 @@ const Header = () => (
       <Link className="navbar-brand" to="/home">
         <img src="https://www.capgemini.com/wp-content/themes/capgemini-komposite/assets/images/logo.svg"
           height="24px" alt="Capgemini" />
+
+
       </Link>
       <ul className="navbar-nav">
         <li className="nav-item">
           <Link className="nav-link" to="/welcome" >Welcome</Link>
         </li>
+
         <li className="nav-item">
           <Link className="nav-link" to="/emp" >Employee</Link>
         </li>
+
         <li className="nav-item">
           <Link className="nav-link" to="/form" activeClassName="active">My Form</Link>
         </li>
+        
         <li className="nav-item">
           <Link className="nav-link" to="/mat">Material-UI</Link>
         </li>
+      
       </ul>
     </nav>
   </div>

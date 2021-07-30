@@ -15,7 +15,7 @@ export default class Hello extends React.Component {
 
         // set @CrossOrigin(origins = "*") in controllers in spring boot app 
         // ! hardcoded url, see pom.xml "proxy" 
-        // axios.get('http://localhost:8084/Employee')
+        //  axios.get('http://localhost:8084/Employee')
         axios.get('/Employee')
             .then(
                 (response) => {

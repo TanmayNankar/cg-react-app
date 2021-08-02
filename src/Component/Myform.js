@@ -1,4 +1,5 @@
 import React from 'react';
+import Login from './Login';
 
 class MyFileInput extends React.Component {
 
@@ -13,10 +14,18 @@ class MyFileInput extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input type="file" ref={this.curriculum} />
-        <input type="submit" value="Submit" />
+      <div>
+       <h1 className="display-1 text-primary">Form Component</h1>
+       <form onSubmit={this.handleSubmit}>
+          <input type="file" ref={this.curriculum} />
+          <input type="submit" value="Submit" />
       </form>
+      <Login/>
+  </div>
+      // <form onSubmit={this.handleSubmit}>
+      //   <input type="file" ref={this.curriculum} />
+      //   <input type="submit" value="Submit" />
+      // </form>
     )
   }
 }

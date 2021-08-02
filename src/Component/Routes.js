@@ -9,7 +9,7 @@ import Header from './Header';
 import Footer from './Footer';
 import MaterialUiSample from './MaterialUiSample';
 import Welcome from './Welcome';
-
+import Login from './Login';
 
 const Routes = () => {
     return (
@@ -30,8 +30,9 @@ const Routes = () => {
                     <Route path="/form"><MyForm /></Route>
                     <Route path="/home"><Home /></Route>
                     <Route path="/mat"><MaterialUiSample /></Route>
-                    <Route path="/form"><MyForm /></Route>
                     {/* undefined url */}
+                    <Route path="/login"><Login /></Route>
+
                     <Route path="/*"><PageNotFound /></Route>
                 </Switch>
                 
@@ -44,3 +45,6 @@ const Routes = () => {
 };
 export default Routes;
  
+
+
+

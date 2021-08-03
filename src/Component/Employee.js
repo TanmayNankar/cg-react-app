@@ -5,8 +5,9 @@ import { useState, useEffect } from 'react';
 import JavaData from './JavaData';
 // import Counter from './Counter';
 
+
+
 let Employee = () => {
-    const [emp, setEmp] = useState('');
     const [parentEmp, setParentEmp] = useState({}); // parent state  
     const [parentEmpHike, setParentEmpHke] = useState(0); // parent state  
     const [childEmp, setChildEmp] = useState({}); // from callback    
@@ -14,8 +15,8 @@ let Employee = () => {
     useEffect(() => {
 
         setParentEmp({
-            id: 201,
-            name: 'Monu',
+            eid: 201,
+            ename: 'Sonu',
             salary: 20.5
         }
         );
@@ -31,12 +32,12 @@ let Employee = () => {
     return (
         <div>
             <h1 >Employee Component</h1>
-            <p> parent {parentEmp.name}</p>
+            <p> parent {parentEmp.ename}</p>
             <p> parent {parentEmpHike}</p>
             {/* <JavaData></JavaData> */}
-            <p>parent {childEmp.name}</p>
+            <p>parent {childEmp.ename}</p>
             <JavaData
-                parentEmp={parentEmp}
+                parentEmp={parentEmp} //3
                 parentEmpHike={parentEmpHike}
                 parentCallback={handleCallback}
             ></JavaData>
@@ -46,6 +47,9 @@ let Employee = () => {
 }
 export default Employee;
 
+
+
+// // fun or  class
 // class Employee extends React.Component {
 
 //     constructor() {
@@ -61,19 +65,21 @@ export default Employee;
 //        this.setState({childName :childinfo});
 //     }
 
-//     render() {
-//         return (<div>
-//             <h1 className="display-1 text-primary">Employee Component</h1>
-//            {/* <JavaData dataFromParent = {this.state.parentName}></JavaData> */}
-//            <JavaData getCall= {this.childCallBack} ></JavaData>          
-//            {/* <Hello />
-//             <MyTable/> */}
+    // render() {
+    //     return (<div>
+    //         <h1 className="display-1 text-primary">Employee Component</h1>
+    //        {/* <JavaData dataFromParent = {this.state.parentName}></JavaData> */}
+    //        <JavaData getCall= {this.childCallBack} ></JavaData>          
+    //        {/* <Hello />
+    //         <MyTable/> */}
         
-//         </div>
+// //         </div>
 //         );
 //     }
 // }
 // export default Employee;
+
+
 
 // class Employee extends React.Component {
 

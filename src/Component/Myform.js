@@ -8,17 +8,19 @@ class MyFileInput extends React.Component {
     this.curriculum = React.createRef()
     this.handleSubmit = this.handleSubmit.bind(this)
   }
+  
   handleSubmit(event) {
     alert(this.curriculum.current.files[0].name)
     event.preventDefault()
   }
+
   render() {
     return (
       <div>
        <h1 className="display-1 text-primary">Form Component</h1>
        <form onSubmit={this.handleSubmit}>
           <input type="file" ref={this.curriculum} />
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Tanmay" />
       </form>
       <Login/>
   </div>

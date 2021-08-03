@@ -2,7 +2,7 @@ import React from 'react';
 
 // Function component 
 
-let fun = () => {return 'fun'}
+// let fun = () => {return 'fun'}
 
 
 let Welcome = (props) => {
@@ -11,7 +11,7 @@ let Welcome = (props) => {
         <div>
             <h1>Welcome, {props.name} </h1>
             <p> {props.phone} </p>
-            <p> {fun()} </p>
+            {/* <p> {fun()} </p> */}
         </div>
     );
 }

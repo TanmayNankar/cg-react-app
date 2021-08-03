@@ -1,5 +1,9 @@
 import React from 'react';
 
+
+//var let const 
+// old style
+// () = => {}
 function Footer() {
   return (
 

@@ -2,12 +2,24 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 import Calc from './Component/Calc';
  
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Component/);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Home/);
+  expect(linkElement).toBeInTheDocument();
+});
  
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Welcome/);
+  expect(linkElement).toBeInTheDocument();
+});
+
 describe(`Test Employee Component`, () => {
 
   it(`test Calc equals 10`, () => {

@@ -1,14 +1,19 @@
 //// create store using redux 
 import { createStore } from "redux";
-import rootReducer from "./reducer";
+import Reducer from "./reducer";
 
-console.log(`store.js`);
+console.log(`store invoked.`);
 
-const store = createStore(rootReducer);
+
+// step 2 . create store 
+
+const store = createStore(Reducer, { data: `Some data to start store...` });
+
+
+// let store = createStore
+//     (Reducer, { data: 'Initial data from the store' });
 
 export default store;
-
-
 
 
 //// create store using redux toolkit 

@@ -10,6 +10,8 @@ import Footer from './Footer';
 import MaterialUiSample from './MaterialUiSample';
 import Welcome from './Welcome';
 import Login from './Login';
+import DataMapper from '../redux/DataMapper';
+
 
 const Routes = () => {
     return (
@@ -30,6 +32,7 @@ const Routes = () => {
                     <Route path="/form"><MyForm /></Route>
                     <Route path="/home"><Home /></Route>
                     <Route path="/mat"><MaterialUiSample /></Route>
+                    <Route path="/datamapper"> <DataMapper /> </Route>
                     {/* undefined url */}
                     <Route path="/login"><Login /></Route>
 

@@ -1,0 +1,36 @@
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import ReduxApp from './ReduxApp';
+import Action from './actions';
+
+
+// step 5 - use redux in our component - 
+// create two action methods 
+// send data to store 
+
+// maps current state data to store object 
+const mapStateToProps = (state) => {
+    console.log('state mapped to props, state.data: ' + state.data);
+    return {
+        data: state.data
+    }
+}
+
+// sends state data to redux store 
+
+const mapDispatchToProps = (dispatch) => {
+    console.log('map dispatched to props');
+    return bindActionCreators({ onChange: Action }, dispatch);
+}
+
+// connect the above two methods 
+
+const DataMapper = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(ReduxApp)
+
+export default DataMapper;
+
+
+

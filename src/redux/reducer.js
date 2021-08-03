@@ -1,18 +1,27 @@
-import { GET_EMP_BY_ID } from "./types";
+// step 3. create reducer to handle state update requests 
 
-const initialState = {
-    articles: []
-};
+const Reducer = (state, action) => {
+    console.log(`Reducer invoked.`);
 
-const rootReducer = (state = initialState, action) => {
-    console.log(`rootReducer rootReducer.js`);
-    // create more actions here - 
-    if (action.type === GET_EMP_BY_ID) {
-        return Object.assign({}, state, {
-            articles: state.articles.concat(action.payload)
-        });
+    // if (action.type == DATA_CHANGED)
+    //     return 1;
+
+    // else if (action.type == SALARY_CHANGED)
+    //     return 2;
+
+
+    switch (action.type) {
+        case 'DATA_CHANGED':
+            console.log('Data passed.');
+
+            return Object.assign({}, state, { data: action.data });
+
+            case 'SALARY_CHANGED':
+            console.log('Data passed.');
+            return Object.assign({}, state, { data: action.data });
+        default:
+            console.log('Default value was presented.');
+            return state;
     }
-    return state;
 }
-
-export default rootReducer;
+export default Reducer;
